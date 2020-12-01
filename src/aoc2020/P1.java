@@ -27,8 +27,7 @@ public class P1 {
 		
 		for(j = 0; !found && j < 200; j++) {
 			for(k = 0; !found && k < 200; k++) {
-				int aux = input[j] + input[k];
-				if(aux == 2020) {
+				if(input[j] + input[k] == 2020) {
 					System.out.print(input[j] * input[k]);
 					found = true;
 				}
@@ -45,12 +44,8 @@ public class P1 {
 		for(i = 0; !found && i < 200; i++) {
 			for(j = 0; !found && j < 200; j++) {
 				for(k = 0; !found && k < 200; k++) {
-					
-					int aux1 = input[i];
-					int aux2 = input[j];
-					int aux3 = input[k];
-					if(aux1 + aux2 + aux3 == 2020) {
-						System.out.print(aux1*aux2*aux3 + "\n");
+					if(input[i] + input[j] + input[k] == 2020) {
+						System.out.print(input[i] * input[j] * input[k] + "\n");
 						found = true;
 					}
 				}
