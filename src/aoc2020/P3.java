@@ -26,15 +26,14 @@ public class P3 {
 				map[i][j] = aux[i].charAt(j);
 			}
 		}
-		
-		//System.out.print(map[322][31]);
-		
+				
 		i = 0;
 		x = 0;
 
 		/*
 		 * Problem 3.1
 		 */
+		
 		while(i < 323 - 1) {
 			x += 3;
 			if(x >= 31) x = x - 31;
@@ -50,6 +49,7 @@ public class P3 {
 		
 		int res2 = 0, res3 = 0, res4 = 0, res5 = 0;
 		x = 0; i = 0;
+		
 		//R1, D1
 		while(i < 323 - 1) {
 			x++;
@@ -58,6 +58,7 @@ public class P3 {
 			if(map[i][x] == '#') res2++;
 		}
 		x = 0; i = 0;
+		
 		//R5, D1
 		while(i < 323 - 1) {
 			x += 5;
@@ -66,6 +67,7 @@ public class P3 {
 			if(map[i][x] == '#') res3++;
 		}
 		x = 0; i = 0;
+		
 		//R7, D1
 		while(i < 323 - 1) {
 			x += 7;
@@ -74,6 +76,7 @@ public class P3 {
 			if(map[i][x] == '#') res4++;
 		}
 		x = 0; i = 0;
+		
 		//R1, D2
 		while(i < 323 - 1) {
 			x++;
